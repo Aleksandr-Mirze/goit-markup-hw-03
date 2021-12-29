@@ -1,0 +1,274 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --var-main-text-color: #212121;
+  --var-logo-web-color: #2196f3;
+  --var-bcg-color: #2f303a;
+  --var-position-color: #757575;
+  --var-white-color: #ffffff;
+  --btn-bcg: #f5f4fa;
+  --btn-hover: #188ce8;
+  --advant-aims: #e5e5e5;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--var-main-text-color);
+  background-color: var(--var-white-color);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  margin-right: 93px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts {
+  margin-left: auto;
+}
+
+.header-nav-link {
+  list-style: none;
+  font-weight: 500;
+  display: flex;
+}
+
+.margin:not(:last-child) {
+  margin-right: 50px;
+}
+
+*/ .link-color-header {
+  color: var(--var-main-text-color);
+}
+
+.link {
+  font-weight: 500;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--var-logo-web-color);
+}
+
+.link-color {
+  color: var(--var-position-color);
+}
+.current {
+  color: var(--var-logo-web-color);
+}
+
+.header-advantages {
+  list-style: none;
+  display: flex;
+  background-color: var var(--advant-aims);
+}
+
+.no-decordation {
+  text-decoration: none;
+}
+
+.web-color {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--var-logo-web-color);
+}
+
+.studio-color {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--var-main-text-color);
+}
+.hero {
+  background-color: var(--var-bcg-color);
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--var-white-color);
+  /* width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px; */
+  background: var(--var-bcg-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.header-advantages-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--var-main-text-color);
+}
+
+.order-btn {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--var-white-color);
+  background-color: var(--var-logo-web-color);
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+}
+
+.order-btn-filter {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--var-bcg-color);
+  background-color: var(--btn-bcg);
+}
+.order-btn:focus,
+.order-btn:hover {
+  background-color: var(--var-logo-web-color);
+}
+
+.order-btn-filter:hover,
+.order-btn-filter:focus {
+  color: var(--var-white-color);
+  background-color: var(--var-logo-web-color);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--var-main-text-color);
+}
+
+.header-advantages-text {
+  line-height: 1.71;
+  color: var(--var-position-color);
+}
+
+.name {
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--var-main-text-color);
+}
+
+.name-position {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--var-position-color);
+}
+
+.item-name {
+  font-weight: 500;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--var-main-text-color);
+}
+
+.filter-name {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--var-position-color);
+}
+.footer-color {
+  background-color: var(--var-bcg-color);
+}
+
+.studio-color-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--var-white-color);
+}
+
+.map {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--var-white-color);
+}
+
+.contacts {
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-nav-link {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.link-nav-footer:focus,
+.link-nav-footer:hover {
+  color: var(--var-white-color);
+}
