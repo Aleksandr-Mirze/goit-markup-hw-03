@@ -14,7 +14,7 @@
         rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
         crossorigin="anonymous" 
-    referrerpolicy="no-referrer" 
+        referrerpolicy="no-referrer" 
     />
 </head>
 <body class="main-text-color">
@@ -30,8 +30,8 @@
         </nav> 
             <div class="header-contacts">
                 <ul class="header-nav-link">
-                    <li class="margin2"><a class="no-decordation link link-color" href="mailto:info@devstudio.com">info@devstudio.com</a></li> 
-                    <li class="margin3"><a class="no-decordation link link-color" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="header-mail"><a class="no-decordation link link-color" href="mailto:info@devstudio.com">info@devstudio.com</a></li> 
+                    <li class="header-tel"><a class="no-decordation link link-color " href="tel:+380961111111">+38 096 111 11 11</a></li>
             </div>
             </ul>
       </div>
@@ -39,47 +39,52 @@
    <main>
     <!--Секция 1  Главная-->
        <section class="hero">
-            <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button class="order-btn" type="button">Заказать услугу</button>
         </section>
 
         <!--Секция 2 преимущества-->
         <section class="section">
+            <div class="container">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <ul class="header-advantages">
-                <li>
+                <li class="item">
                     <h3 class="header-advantages-title">Внимание к деталям</h3>
                     <p class="header-advantages-text">Идейные соображения, а также начало повседневной работы 
                         по формированию позиции.</p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="header-advantages-title">Пунктуальность</h3>
                     <p class="header-advantages-text">Задача организации, в особенности же рамки и место обучения 
                     кадров влечет за собой.
                     </p></li>
-                <li>
+                <li class="item">
                     <h3 class="header-advantages-title">Планирование</h3>
                     <p class="header-advantages-text">Равным образом консультация с широким активом в значительной степени обуславливает.
                     </p></li>
-                <li>
+                <li class="item">
                     <h3 class="header-advantages-title"> Современные технологии</h3>
                     <p class="header-advantages-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
             </ul>
+            </div>
         </section>
 
         <!--Секция 3 Чем мы занимаемся-->
         <sectio class="section">
+            <div class="container"> 
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="header-nav-link">
                 <li><img src="./images/img1.jpg" height="294" width="370" alt="Back-end" ></li>
                 <li><img src="./images/img2.jpg" height="294" width="370" alt="UX/UI"></li>
                 <li><img src="./images/img3.jpg" height="294" width="370" alt="Front-end"></li>
             </ul>
+            </div>
         </section>
         
         <!--Секция 4 Чем мы занимаемся-->
 
         <section class="section">
+            <div class="container">
             <h2 class="section-title">Наша команда</h2>
             <ul class="header-nav-link">
                 <li>
@@ -103,20 +108,22 @@
                     <p  class="name-position" lang="en">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
    </main>
 
    <!--Футер-->
    <footer class="footer-color">
-    <a class="header-link no-decordation web-color" href="">Web<span class="studio-color-footer">Studio</span></a>
-       
-        <address>
-            <ul class="footer-nav-link">
+    <div class="container">
+        <a class="footer-link no-decordation web-color" href="">Web<span class="studio-color-footer">Studio</span></a>
+         <address>
+            <ul class="footer-nav-link footer-link">
                 <li><a class="map no-decordation" href="https://goo.gl/maps/5AJJs3MzwdSv13sz5" target="_blank" rel="noopener noreferrer"> г. Киев, пр-т Леси Украинки, 26 </a></li>
                 <li><a class="contacts no-decordation link-nav-footer" href="mailto:info@example.com">info@example.com</a></li>
                 <li><a class="contacts no-decordation link-nav-footer" href="tel:+380991111111">+38 099 111 11 111</a></li>
             </ul>
         </address>
+    </div>
    </footer>
 </body>
 </html>
