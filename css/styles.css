@@ -89,6 +89,9 @@ body {
   padding: 32px 0;
 }
 
+.header-nav-link > .margin {
+  margin-right: 30px;
+}
 .margin:not(:last-child) {
   margin-right: 50px;
 }
@@ -117,6 +120,7 @@ body {
   list-style: none;
   display: flex;
   background-color: var var(--advant-aims);
+  align-items: center;
 }
 
 .header-advantages-title {
@@ -135,12 +139,8 @@ body {
 .header-advantages-text {
   line-height: 1.71;
   color: var(--var-position-color);
-  width: 270px;
+  width: 250px;
 }
-/* 
-.header-advantages-title {
-  flex-wrap: wrap;
-} */
 
 .no-decordation {
   text-decoration: none;
@@ -163,7 +163,6 @@ body {
 }
 .hero {
   padding: 200px 0;
-
   text-align: center;
   background-color: var(--var-bcg-color);
 }
@@ -224,8 +223,16 @@ body {
   padding: 94px 0;
 }
 
+.section-team {
+  padding: 94px 0;
+  background-color: var(--btn-bcg);
+}
 .padding {
   padding-top: 0;
+}
+
+.team {
+  padding-right: 30px;
 }
 
 .section-title {
@@ -249,6 +256,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   color: var(--var-position-color);
+  margin-top: 10px;
 }
 
 .item-name {
@@ -257,6 +265,10 @@ body {
   font-size: 16px;
   line-height: 1.19;
   color: var(--var-main-text-color);
+}
+
+.card-team {
+  padding: 30px;
 }
 
 .filter-name {
