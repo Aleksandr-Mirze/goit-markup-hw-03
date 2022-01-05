@@ -64,6 +64,10 @@ body {
   align-items: center;
 }
 
+.header {
+  border-bottom: 1px solid var(--advant-aims);
+}
+
 .header-link {
   margin-right: 93px;
   padding: 24px;
@@ -177,42 +181,45 @@ body {
   color: var(--var-white-color);
   margin-left: auto;
   margin-right: auto;
-  /* text-align: center; */
   width: 696px;
-  /* height: 120px;
-  left: 452px;
-  top: 280px; */
   background: var(--var-bcg-color);
 }
 
 .order-btn {
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.06em;
-  margin-top: 30px;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
   color: var(--var-white-color);
   background-color: var(--var-logo-web-color);
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
+  padding: 6px 22px;
 }
 
 .order-btn-filter {
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
   color: var(--var-bcg-color);
   background-color: var(--btn-bcg);
+  padding: 6px 22px;
 }
+
+.item-filter:not(:last-child) {
+  margin-right: 8px;
+}
+
 .order-btn:focus,
 .order-btn:hover {
   background-color: var(--var-logo-web-color);
 }
+
+/* .cards {
+} */
 
 .order-btn-filter:hover,
 .order-btn-filter:focus {
@@ -270,6 +277,9 @@ body {
 
 .card-team {
   padding: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .filter-name {

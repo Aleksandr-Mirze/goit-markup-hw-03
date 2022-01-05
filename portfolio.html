@@ -40,95 +40,136 @@
     <!--Фильтр-->
     <main>
         <section>
+            <div class="container">
             <h1 class="visually-hidden">Фильтр</h1>
                 <ul class="header-nav-link">
-                    <li><button class="order-btn" type="button">Все</button></li>   
-                    <li><button class="order-btn-filter" type="button">Веб-сайты</button></li>
-                    <li><button class="order-btn-filter" type="button">Приложение</button></li>
-                    <li><button class="order-btn-filter" type="button">Дизайн</button></li>
-                    <li><button class="order-btn-filter" type="button">Маркетинг</button></li>
+                    <li class="item-filter"><button class="order-btn" type="button">Все</button></li>   
+                    <li class="item-filter"><button class="order-btn-filter" type="button">Веб-сайты</button></li>
+                    <li class="item-filter"><button class="order-btn-filter" type="button">Приложение</button></li>
+                    <li class="item-filter"><button class="order-btn-filter" type="button">Дизайн</button></li>
+                    <li class="item-filter"><button class="order-btn-filter" type="button">Маркетинг</button></li>
                 </ul>
+            </div>
+        </section>
         
-        <!--Сайт-->
-            <h1 class="visually-hidden">Наша команда</h1>
+        <!--Карточки-->
+        <section class="cards">
+            <div class="container">
+            <h1 class="visually-hidden">Карточки</h1>
             <ul class="header-nav-link">
-                <li>
+                <li class="item">
                     <a class="no-decordation" href="">
-                        <img src="./images/img-portf1.jpg" height="294" width="370" alt="Дизайнер продукта">
-                        <h2 class="item-name">Технокряк</h2>
-                        <p  class="filter-name" lang="ru">Веб-сайт</p>
-                    </a>
+                        <img src="./images/img-portf1.jpg" height="294" width="370" alt="Дизайнер продукта"></a>
+                            
+                        <div class="card-team">
+                            <h2 class="item-name">Технокряк</h2>
+                            <p  class="filter-name" lang="ru">Веб-сайт</p>
+                        </div>
                 </li>
-                <li>
+                
+                <li class="item">
                     <a class="no-decordation" href="">
-                        <img src="./images/img-portf2.jpg" height="294" width="370" alt="Frontend разработчик">
-                        <h2 class="item-name">Постер New Orlean vs Golden Star</h2>
-                        <p class="filter-name" lang="ru">Дизайн</p>
-                    </a>
+                        <img src="./images/img-portf2.jpg" height="294" width="370" alt="Frontend разработчик"></a>
+                        
+                        <div class="card-team">
+
+                            <h2 class="item-name">Постер New Orlean vs Golden Star</h2>
+                            <p class="filter-name" lang="ru">Дизайн</p>
+                        </div>
                 </li>
-                <li>
+
+                <li class="item">
                     <a class="no-decordation" href="">
-                        <img src="./images/img-portf3.jpg" height="294" width="370" alt="Маркетолог">
-                        <h2 class="item-name">Ресторан Seafood</h2>
-                        <p class="filter-name" lang="ru">Приложение</p>
-                    </a>
+                        <img src="./images/img-portf3.jpg" height="294" width="370" alt="Маркетолог"></a>
+                      
+                        <div class="card-team">
+
+                            <h2 class="item-name">Ресторан Seafood</h2>
+                            <p class="filter-name" lang="ru">Приложение</p>
+                        </div>
                 </li>
-                <li>
+
+                <li class="item">
                     <a class="no-decordation" href="">
-                        <img src="./images/img-portf4.jpg" height="294" width="370" alt="Дизайнер">
-                        <h2 class="item-name">Проект Prime</h2>
-                        <p class="filter-name" lang="ru">Маркетинг</p>
-                    </a>
+                        <img src="./images/img-portf4.jpg" height="294" width="370" alt="Дизайнер"> </a>
+                        
+                        <div class="card-team">
+                            <h2 class="item-name">Проект Prime</h2>
+                            <p class="filter-name" lang="ru">Маркетинг</p>
+                        </div>
                 </li>
-                <li>
+
+                <li class="item">
                     <a class="no-decordation" href="">
-                        <img src="./images/img-portf5.jpg" height="294" width="370" alt="Дизайнер">
+                        <img src="./images/img-portf5.jpg" height="294" width="370" alt="Дизайнер"> </a>
+                        <div class="card-team">
+
                         <h2 class="item-name">Проект Boxes</h2>
                         <p class="filter-name"  lang="ru">Приложение</p>
-                    </a>
+                        </div>
                 </li>
-                <li>
+
+                <li class="item">
                     <a class="no-decordation" href="">
-                        <img src="./images/img-portf6.jpg" height="294" width="370" alt="Дизайнер продукта">
-                        <h2 class="item-name">Inspiration has no Borders</h2>
-                        <p class="filter-name" lang="ru">Веб-сайт</p>
-                    </a>
+                        <img src="./images/img-portf6.jpg" height="294" width="370" alt="Дизайнер продукта"> </a>
+                            
+                        <div class="card-team">
+
+                            <h2 class="item-name">Inspiration has no Borders</h2>
+                            <p class="filter-name" lang="ru">Веб-сайт</p>
+                        </div>
                 </li>
-                <li>
+
+                <li class="item">
                     <a class="no-decordation" href="">
-                        <img src="./images/img-portf7.jpg" height="294" width="370" alt="Frontend разработчик">
-                        <h2 class="item-name">Издание Limited Edition</h2>
-                        <p class="filter-name" lang="ru">Дизайн</p>
-                    </a>
+                        <img src="./images/img-portf7.jpg" height="294" width="370" alt="Frontend разработчик"> </a>
+                                                
+                        <div class="card-team">
+
+                            <h2 class="item-name">Издание Limited Edition</h2>
+                            <p class="filter-name" lang="ru">Дизайн</p>
+                        </div>
                 </li>
-                <li>
+
+                <li class="item">
                     <a class="no-decordation" href="">
-                        <img src="./images/img-portf8.jpg" height="294" width="370" alt="Дизайнер">
-                        <h2 class="item-name">Проект LAB</h2>
-                        <p class="filter-name" lang="ru">Маркетинг</p>
-                    </a>
+                        <img src="./images/img-portf8.jpg" height="294" width="370" alt="Дизайнер"> </a>
+                                                
+                        <div class="card-team">
+
+                            <h2 class="item-name">Проект LAB</h2>
+                            <p class="filter-name" lang="ru">Маркетинг</p>
+                        </div>  
                 </li>
-                <li>
+
+                <li class="item">
                     <a class="no-decordation" href="">
-                        <img src="./images/img-portf9.jpg" height="294" width="370" alt="Дизайнер">
-                        <h2 class="item-name">Growing Business</h2>
-                        <p class="filter-name" lang="ru">Приложение</p>
-                    </a>
+                        <img src="./images/img-portf9.jpg" height="294" width="370" alt="Дизайнер"> </a>
+                                                
+                            <div class="card-team">
+
+                                <h2 class="item-name">Growing Business</h2>
+                                <p class="filter-name" lang="ru">Приложение</p>
+                            </div>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
+
     <!--Футер-->
     <footer class="footer-color">
-        <a class="header-link no-decordation web-color" href="">Web<span class="studio-color-footer">Studio</span></a>
+        <div class="container">
+        <a class="footer-link no-decordation web-color" href="">Web<span class="studio-color-footer">Studio</span></a>
         <address>
-            <ul class="footer-nav-link">
+            <ul class="footer-nav-link footer-link">
                 <li><a class="map no-decordation" href="https://goo.gl/maps/5AJJs3MzwdSv13sz5" target="_blank" rel="noopener noreferrer"> г. Киев, пр-т
                         Леси Украинки, 26 </a></li>
                 <li><a class="contacts no-decordation link-nav-footer" href="mailto:info@example.com">info@example.com</a></li>
                 <li><a class="contacts no-decordation link-nav-footer" href="tel:+380991111111">+38 099 111 11 111</a></li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 </html>
