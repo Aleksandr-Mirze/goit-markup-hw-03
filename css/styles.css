@@ -218,8 +218,9 @@ body {
   background-color: var(--var-logo-web-color);
 }
 
-/* .cards {
-} */
+.cards-list {
+  flex-wrap: wrap;
+}
 
 .order-btn-filter:hover,
 .order-btn-filter:focus {
