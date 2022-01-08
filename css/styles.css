@@ -56,7 +56,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .container-nav {
@@ -92,7 +92,19 @@ body {
   font-weight: 500;
   display: flex;
   padding: 32px 0;
+  justify-content: center;
 }
+
+
+.filter-nav-link {
+  list-style: none;
+  font-weight: 500;
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 34px;
+  justify-content: center;
+}
+
 
 .header-nav-link > .margin {
   margin-right: 30px;
@@ -218,9 +230,13 @@ body {
   background-color: var(--var-logo-web-color);
 }
 
-.cards-list {
+.filter-cards-link {
+  list-style: none;
+  font-weight: 500;
+  padding-bottom: 34px;
+  display: flex;
   flex-wrap: wrap;
-}
+  }
 
 .order-btn-filter:hover,
 .order-btn-filter:focus {
@@ -236,12 +252,14 @@ body {
   padding: 94px 0;
   background-color: var(--btn-bcg);
 }
-.padding {
-  padding-top: 0;
+
+.cards {
+  padding bottom: 94px;
+  background-color: var(--btn-bcg);
 }
 
-.team {
-  padding-right: 30px;
+.padding {
+  padding-top: 0;
 }
 
 .section-title {
@@ -269,11 +287,20 @@ body {
 }
 
 .item-name {
-  font-weight: 500;
+  font-weight: 700;
   text-align: left;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--var-main-text-color);
+}
+
+.filter-name {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--var-position-color);
+  text-align: left;
+  margin-top: 4px;
 }
 
 .card-team {
@@ -283,16 +310,24 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.card-team-portfolio {
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+}
+
 .filter-name {
   text-align: left;
   font-size: 16px;
   line-height: 1.19;
   color: var(--var-position-color);
+  margin-top: 4px;
 }
 .footer-color {
   background-color: var(--var-bcg-color);
   padding: 60px 0;
-  /* height: 252px; */
 }
 
 .studio-color-footer {
@@ -307,12 +342,14 @@ body {
   font-style: normal;
   line-height: 1.71;
   color: var(--var-white-color);
+  margin-bottom: 9px;
 }
 
 .contacts {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
 
 .footer-link {
