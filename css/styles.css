@@ -153,6 +153,11 @@ body {
   margin-right: 30px;
 }
 
+.item-cards:not(:nth-child(3n+3)) {
+  margin-right: 30px;
+
+}
+
 .header-advantages-text {
   line-height: 1.71;
   color: var(--var-position-color);
