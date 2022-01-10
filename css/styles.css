@@ -41,6 +41,8 @@ img {
   --btn-bcg: #f5f4fa;
   --btn-hover: #188ce8;
   --advant-aims: #e5e5e5;
+  --social-links: #afb1b8;
+
 }
 
 body {
@@ -62,6 +64,7 @@ body {
 .container-nav {
   display: flex;
   align-items: center;
+  
 }
 
 .header {
@@ -73,7 +76,11 @@ body {
   padding: 24px;
 }
 
+
 .header-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 50px;
 }
 
@@ -81,10 +88,11 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
+  
 }
 
 .header-contacts {
-  margin-left: auto;
+   margin-left: auto;
 }
 
 .header-nav-link {
@@ -93,6 +101,8 @@ body {
   display: flex;
   padding: 32px 0;
   justify-content: center;
+  align-items: center;
+  margin-left: auto;
 }
 
 
@@ -140,6 +150,18 @@ body {
   align-items: center;
 }
 
+.advant-pic {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btn-bcg);
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+
 .header-advantages-title {
   margin-bottom: 10px;
   margin-right: 10px;
@@ -147,6 +169,14 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--var-main-text-color);
+  
+}
+
+.icon-advant {
+  /* margin-bottom: 30px; */
+  width: 70px;
+  height: 70px;
+  
 }
 
 .item:not(:last-child) {
@@ -165,6 +195,7 @@ body {
 }
 
 .no-decordation {
+  
   text-decoration: none;
 }
 
@@ -183,10 +214,19 @@ body {
   line-height: 1.19;
   color: var(--var-main-text-color);
 }
+
 .hero {
   padding: 200px 0;
   text-align: center;
   background-color: var(--var-bcg-color);
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+    url("../images/img-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
 }
 
 .hero-title {
@@ -199,10 +239,23 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 696px;
-  background: var(--var-bcg-color);
+    
+}
+
+.order-btn-all {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  color: var(--var-white-color);
+  background-color: var(--var-logo-web-color);
+  padding: 6px 22px;
 }
 
 .order-btn {
+  margin-top: 30px;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -289,6 +342,45 @@ body {
   line-height: 1.19;
   color: var(--var-position-color);
   margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social-links-item + .social-links-item {
+margin-left: 10px;
+}
+
+.social-links-site {
+  width: 44px;
+  height: 44px;
+  background-color: var(--var-white-color);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: var(--var-white-color);
+}
+
+.social-links-logo {
+  
+  fill: var(--social-links);
+}
+
+.social-links-site:hover,
+.social-links-site:focus {
+  background-color: var(--var-logo-web-color);
+}
+
+.social-links-site:hover .social-links-logo,
+.social-links-site:focus .social-links-logo {
+  fill: var(--var-white-color);
 }
 
 .item-name {
@@ -309,6 +401,7 @@ body {
 }
 
 .card-team {
+  background: var(--var-white-color);
   padding: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
