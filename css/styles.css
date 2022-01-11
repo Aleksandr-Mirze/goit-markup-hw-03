@@ -45,6 +45,7 @@ img {
   --btn-bcg: #f5f4fa;
   --btn-hover: #188ce8;
   --advant-aims: #e5e5e5;
+  --social-links: #afb1b8;
 }
 
 body {
@@ -78,6 +79,9 @@ body {
 }
 
 .header-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 50px;
 }
 
@@ -97,8 +101,9 @@ body {
   display: flex;
   /* padding: 32px 0; */
   justify-content: center;
+  align-items: center;
+  margin-left: auto;
 }
-
 
 .filter-nav-link {
   list-style: none;
@@ -108,7 +113,6 @@ body {
   padding-bottom: 34px;
   justify-content: center;
 }
-
 
 .header-nav-link > .margin {
   margin-right: 30px;
@@ -145,6 +149,17 @@ body {
   align-items: center;
 }
 
+.advant-pic {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btn-bcg);
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .header-advantages-title {
   margin-bottom: 10px;
   margin-right: 10px;
@@ -152,6 +167,20 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--var-main-text-color);
+}
+
+.icon-advant {
+  /* margin-bottom: 30px; */
+  width: 70px;
+  height: 70px;
+}
+
+.item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.item-cards:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
 }
 
 .header-advantages-text {
@@ -164,15 +193,9 @@ body {
   margin-right: 30px;
 }
 
-.item-cards:not(:nth-child(3n+3)) {
+.item-cards:not(:nth-child(3n + 3)) {
   margin-right: 30px;
-  
 }
-
-
-/* .no-decordation {
-  text-decoration: none;
-} */
 
 .web-color {
   font-family: Raleway;
@@ -190,10 +213,19 @@ body {
   line-height: 1.19;
   color: var(--var-main-text-color);
 }
+
 .hero {
   padding: 200px 0;
   text-align: center;
   background-color: var(--var-bcg-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/img-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -210,7 +242,20 @@ body {
   margin-bottom: 30px;
 }
 
+.order-btn-all {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  color: var(--var-white-color);
+  background-color: var(--var-logo-web-color);
+  padding: 6px 22px;
+}
+
 .order-btn {
+  margin-top: 30px;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -251,7 +296,7 @@ body {
   padding-bottom: 34px;
   display: flex;
   flex-wrap: wrap;
-    }
+}
 
 .order-btn-filter:hover,
 .order-btn-filter:focus {
@@ -273,7 +318,7 @@ body {
 }
 
 .cards {
-  padding bottom: 94px;
+  padding-bottom: 94px;
   background-color: var(--btn-bcg);
 }
 
@@ -304,6 +349,43 @@ body {
   line-height: 1.19;
   color: var(--var-position-color);
   margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social-links-item + .social-links-item {
+  margin-left: 10px;
+}
+
+.social-links-site {
+  width: 44px;
+  height: 44px;
+  background-color: var(--var-white-color);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: var(--var-white-color);
+}
+
+.social-links-logo {
+  fill: var(--social-links);
+}
+
+.social-links-site:hover,
+.social-links-site:focus {
+  background-color: var(--var-logo-web-color);
+}
+
+.social-links-site:hover .social-links-logo,
+.social-links-site:focus .social-links-logo {
+  fill: var(--var-white-color);
 }
 
 .item-name {
@@ -322,11 +404,12 @@ body {
   text-align: left;
   margin-top: 4px;
 }
- 
+
 .card-team {
+  background: var(--var-white-color);
   padding: 30px;
   border-radius: 0px 0px 4px 4px;
-  border-bottom: 1px solid #EEEEEE ;
+  border-bottom: 1px solid #eeeeee;
   /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2); */
 }
@@ -334,18 +417,16 @@ body {
 .card-team-portfolio {
   padding: 20px;
   border-radius: 0px 0px 4px 4px;
-  border-bottom: 1px solid #EEEEEE ;
+  border-bottom: 1px solid #eeeeee;
   margin-bottom: 30px;
-  
 }
 
-.card-team:hover, 
+.card-team:hover,
 .card-team:focus,
 .card-team-portfolio:hover,
 .card-team-portfolio:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  
 }
 
 .filter-name {
