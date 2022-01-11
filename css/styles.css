@@ -243,7 +243,7 @@ body {
 }
 
 .order-btn-all {
-  border: none;
+  border: 0;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
